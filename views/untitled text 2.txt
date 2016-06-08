@@ -1,0 +1,98 @@
+      //  var data = {  
+       //     name    : input.name,
+       //     address : input.address,
+       //     email   : input.email,
+       //     phone   : input.phone 
+       // };
+      ////    INSERT into phonelogsDB
+       // req.app.get('connection').query('INSERT INTO `ebdb`.`PhoneCallLogs` set ?', data, function(err) {
+      //	  if (err) {
+       //     res.send(err);
+       //   } else {
+       //     res.redirect('/hikes');
+       //   }
+       // });
+
+/*====
+INSERT INTO `ebdb`.`PhoneCallLogs`
+(`id`,
+`deviceUUID`,
+`logTimestamp`,
+`originalLogFilename`,
+`callUUID`,
+`callSource`,
+`callMissedStatus`,
+`callDirection`,
+`callDuration`,
+`callFromName`,
+`callFromCallerID`,
+`callFromCaption`,
+`callToNameList`,
+`callToCallerIDList`,
+`callToCaptionList`)
+VALUES
+(<{id: }>,
+<{deviceUUID: }>,
+<{logTimestamp: }>,
+<{originalLogFilename: }>,
+<{callUUID: }>,
+<{callSource: }>,
+<{callMissedStatus: }>,
+<{callDirection: }>,
+<{callDuration: }>,
+<{callFromName: }>,
+<{callFromCallerID: }>,
+<{callFromCaption: }>,
+<{callToNameList: }>,
+<{callToCallerIDList: }>,
+<{callToCaptionList: }>);
+
+
+
+
+
+INSERT INTO `ebdb`.`SMSLogs`
+(`id`,
+`deviceUUID`,
+`logTimestamp`,
+`originalLogFilename`,
+`smsTimestamp`,
+`smsUUID`,
+`smsDirection`,
+`smsFromName`,
+`smsFromCallerID`,
+`smsFromCaption`,
+`smsToNameList`,
+`smsToCallerIDList`,
+`smsToCaptionList`,
+`smsBody`)
+VALUES
+(<{id: }>,
+<{deviceUUID: }>,
+<{logTimestamp: }>,
+<{originalLogFilename: }>,
+<{smsTimestamp: }>,
+<{smsUUID: }>,
+<{smsDirection: }>,
+<{smsFromName: }>,
+<{smsFromCallerID: }>,
+<{smsFromCaption: }>,
+<{smsToNameList: }>,
+<{smsToCallerIDList: }>,
+<{smsToCaptionList: }>,
+<{smsBody: }>);
+
+====*/
+  
+/*=====
+  console.log(req.body.name);
+  console.log("req name: " + req.name);
+  console.log(JSON.stringify(req.body));
+  
+  console.log("-------------------");
+  console.log(req.files.azureDataFile);
+  console.log("-------------------");
+  console.log("Fieldname:  " + req.files.azureDataFile.fieldname);
+  console.log("Original:   " + req.files.azureDataFile.originalname);  
+  console.log("renamed:    " + req.files.azureDataFile.name);
+=====*/

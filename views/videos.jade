@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  h1= title
+
+  div
+    h3 Video Records
+    table(border="1")
+      tr
+        td Device UUID
+        td Log Timestamp
+        td Log Filename
+        td Original Filename
+      each video in videos
+        tr
+          td #{video.deviceUUID}
+          td #{video.logTimestamp}
+          td #{video.logFilename}
+          td #{video.originalFilename}

@@ -1,0 +1,32 @@
+extends layout
+
+block content
+  h1= title
+
+  div
+    h3 Web History Records
+    table(border="1")
+      tr
+        td Device UUID
+        td Log Timestamp
+        td Web UUID
+        td Access Time
+        td Domain Name
+        td Status
+        td URL
+        td Category
+        td Blocked Keyword
+        
+      each url in urls
+        tr
+          td #{url.deviceUUID}
+          td #{url.logTimestamp}
+          td #{url.URLUUID}
+          td #{url.accessTime}
+          td #{url.domainName}
+          td #{url.URLStatus}
+          td #{url.URL}
+          td #{url.category}
+          td #{url.blockedKeyword}
+          
+          

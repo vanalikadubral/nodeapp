@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1= title
+
+  div
+    h3 SMS Records
+    table(border="1")
+      tr
+        td Device UUID
+        td Log Timestamp
+        td SMD UUID
+        td SMS Timestamp
+        td From
+        td To 
+      each sms in smss
+        tr
+          td #{sms.deviceUUID}
+          td #{sms.logTimestamp}
+          td #{sms.smsUUID}
+          td #{sms.smsTimestamp}
+          td #{sms.smsFromName}
+          td #{sms.smsToNameList}

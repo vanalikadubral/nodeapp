@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  h1= title
+
+  div
+    h3 App Usage Records
+    table(border="1")
+      tr
+        td Device UUID
+        td Log Timestamp
+        td Usage Start Time
+        td Usage End Time
+        td App Name
+        td Package Name
+        td Mins Used
+      each appuse in appusage
+        tr
+          td #{appuse.deviceUUID}
+          td #{appuse.logTimestamp}
+          td #{appuse.appUsageStartTime}
+          td #{appuse.appUsageEndTime}
+          td #{appuse.appUsageAppName}
+          td #{appuse.appUsagePackageName}
+          td #{appuse.appUsageAppUsage}

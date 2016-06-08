@@ -1,0 +1,31 @@
+extends layout
+
+block content
+  h1= title
+
+  div
+    h3 Phone Call Records
+    table(border="1")
+      tr
+        td Device UUID
+        td Log Timestamp
+        td Call UUID
+        td Call Timestamp
+        td Source
+        td Missed?
+        td Direction
+        td Duration
+        td From
+        td To 
+      each call in phonecalls
+        tr
+          td #{call.deviceUUID}
+          td #{call.logTimestamp}
+          td #{call.callUUID}
+          td #{call.callTimestamp}
+          td #{call.callSource}
+          td #{call.callMissedStatus}
+          td #{call.callDirection}
+          td #{call.callDuration}
+          td #{call.callFromName}
+          td #{call.callToNameList}

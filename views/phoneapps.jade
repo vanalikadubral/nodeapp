@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1= title
+
+  div
+    h3 Phone App Records
+    table(border="1")
+      tr
+        td Device UUID
+        td Log Timestamp
+        td App UUID
+        td App Version
+        td App Name
+        td App Status 
+      each phoneapp in phoneapps
+        tr
+          td #{phoneapp.deviceUUID}
+          td #{phoneapp.logTimestamp}
+          td #{phoneapp.appUUID}
+          td #{phoneapp.appVersion}
+          td #{phoneapp.appName}
+          td #{phoneapp.appStatus}

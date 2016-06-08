@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  h1= title
+
+  div
+    h3 Picture Records
+    table(border="1")
+      tr
+        td Device UUID
+        td Log Timestamp
+        td Log Filename
+        td Original Filename
+      each picture in pictures
+        tr
+          td #{picture.deviceUUID}
+          td #{picture.logTimestamp}
+          td #{picture.logFilename}
+          td #{picture.originalFilename}

@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1= title
+
+  div
+    h3 Location Records
+    table(border="1")
+      tr
+        td Device UUID
+        td Log Timestamp
+        td Location UUID
+        td Location Timestamp
+        td latitude
+        td longitude
+      each location in locations
+        tr
+          td #{location.deviceUUID}
+          td #{location.logTimestamp}
+          td #{location.locationUUID}
+          td #{location.locationTimestamp}
+          td #{location.latitude}
+          td #{location.longitude}
